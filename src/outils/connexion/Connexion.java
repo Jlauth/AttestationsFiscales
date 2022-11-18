@@ -1,16 +1,24 @@
 package outils.connexion;
 
+import model.Attestation;
+import model.Client;
+
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.Objects;
 
 public class Connexion {
-    private String DBPath = "Chemin aux base de données SQLite";
-    private Connection conn = null;
-    private Statement stmt = null;
 
-    public Connexion(String dBPath) {
-        DBPath = dBPath;
+    private static String DBPath = "Chemin aux bases de donn\u00E9es SQLite";
+    private static Connection conn = null;
+    private static Statement stmt = null;
+    private static PreparedStatement pstmt = null;
+
+    private static ResultSet rs = null;
+
+    public Connexion(String DBPath) {
+        this.DBPath = DBPath;
     }
-
     /**
      * Reqûete de connexion à la database
      */
@@ -25,7 +33,7 @@ public class Connexion {
             System.out.println("Erreur de connexion");
         }catch(SQLException sqlException) {
             sqlException.printStackTrace();
-            System.out.println("Erreur de connexio");
+            System.out.println("Erreur de connexion");
         }
     }
 
@@ -41,14 +49,58 @@ public class Connexion {
         }
     }
 
+    /**
+     *
+     * @param request
+     * @return result Objet de ResultSet
+     */
     public ResultSet query(String request) {
-        ResultSet result = null;
+        ResultSet rs = null;
         try {
-            result = stmt.executeQuery(request);
+            rs = stmt.executeQuery(request);
         }catch(SQLException e) {
             e.printStackTrace();
             System.out.println("Erreur dans la requête "+request);
         }
-        return result;
+        return rs;
     }
+
+    /**
+     * Ajout d'un client
+     * @param client
+     */
+    public void addClient(Client client){
+        try {
+             pstmt = conn.prepareStatement("INSERT INTO Client VALUES(" +
+                    "?, ?, ?, ?, ?)");
+                 pstmt.setInt(1, client.getIdClient());
+                 pstmt.setString(2, client.getTitre());
+                 pstmt.setString(3, client.getNom());
+                 pstmt.setString(4, client.getPrenom());
+                 pstmt.setString(5, client.getAdresse());
+                 pstmt.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Ajout d'une attestation
+     * @param attestation
+     */
+    public void addAttestation(Attestation attestation){
+        try{
+            pstmt = conn.prepareStatement("INSERT INTO Attestation VALUES(" +
+                    "?, ?, ?, ?)");
+            pstmt.setInt(1, attestation.getIdAttestation());
+            pstmt.setDate(2, (Date) attestation.getDateEmission());
+            pstmt.setDate(3, (Date) attestation.getAnneeFiscale());
+            pstmt.setInt(4, attestation.getMontant());
+            pstmt.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+
 }
