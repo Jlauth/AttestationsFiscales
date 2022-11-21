@@ -8,10 +8,10 @@ public class Entreprise {
 
     /**
      * Constructeur de la classe Entreprise
-     * @param idEntreprise
-     * @param nomEntreprise
-     * @param adresseEntreprise
-     * @param agrement
+     * @param idEntreprise      autoincrement
+     * @param nomEntreprise     nom
+     * @param adresseEntreprise adresse
+     * @param agrement          numéro d'agrément
      */
     public Entreprise(int idEntreprise, String nomEntreprise, String adresseEntreprise, int agrement) {
         super();

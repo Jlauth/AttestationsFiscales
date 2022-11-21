@@ -1,10 +1,5 @@
 package model;
 
-import outils.connexion.Connexion;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-
 public class Client {
     private int idClient;
     private String titre;
@@ -12,6 +7,14 @@ public class Client {
     private String prenom;
     private String adresse;
 
+    /**
+     * Constructeur de la classe Client
+     * @param idClient  autoincrement
+     * @param titre     mademoiselle, madame, monsieur
+     * @param nom       client
+     * @param prenom    client
+     * @param adresse   client
+     */
     public Client(int idClient, String titre, String nom, String prenom, String adresse) {
         this.idClient = idClient;
         this.titre = titre;

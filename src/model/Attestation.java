@@ -1,37 +1,28 @@
 package model;
 
-import java.util.Date;
-
 public class Attestation {
-    private int idAttestation;
-    private Date dateEmission;
-    private Date anneeFiscale;
+    private String dateEmission;
+    private String anneeFiscale;
     private int montant;
 
     /**
      * Constructeur de la classe Attestation
-     * @param idAttestation
-     * @param dateEmission
-     * @param anneeFiscale
-     * @param montant
+     * @param dateEmission création de l'attestation
+     * @param anneeFiscale année des prestations
+     * @param montant      montant des prestations
      */
-    public Attestation(int idAttestation, Date dateEmission, Date anneeFiscale, int montant) {
+    public Attestation(String dateEmission, String anneeFiscale, int montant) {
         super();
-        this.idAttestation = idAttestation;
         this.dateEmission = dateEmission;
         this.anneeFiscale = anneeFiscale;
         this.montant = montant;
     }
 
-    public int getIdAttestation() {
-        return idAttestation;
-    }
-
-    public Date getDateEmission() {
+    public String getDateEmission() {
         return dateEmission;
     }
 
-    public Date getAnneeFiscale() {
+    public String getAnneeFiscale() {
         return anneeFiscale;
     }
 
@@ -40,11 +31,11 @@ public class Attestation {
     }
 
 
-    public void setDateEmission(Date dateEmission) {
+    public void setDateEmission(String dateEmission) {
         this.dateEmission = dateEmission;
     }
 
-    public void setAnneeFiscale(Date anneeFiscale) {
+    public void setAnneeFiscale(String anneeFiscale) {
         this.anneeFiscale = anneeFiscale;
     }
 
