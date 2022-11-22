@@ -1,7 +1,5 @@
 package view;
 
-import controller.Controleur;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,7 +7,7 @@ import java.awt.event.ActionListener;
 public class Accueil extends JFrame {
     private JPanel Accueil;
     private JButton btnCreer;
-    private JButton btnEditer;
+    private JButton btnEditerClient;
     private JButton btnImporter;
     private JButton btnQuitter;
     private JPanel Creer;
@@ -17,6 +15,7 @@ public class Accueil extends JFrame {
     private JPanel Importer;
     private JPanel Quitter;
     private JPanel AccueilInfo;
+    private JButton btnEditerEntreprise;
 
     public Accueil() {
 
@@ -28,20 +27,31 @@ public class Accueil extends JFrame {
         btnCreer.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Accueil.setVisible(false);
-                Creer.setVisible(true);
+                Creer creer = new Creer();
+                creer.setVisible(true);
+                dispose();
             }
         });
-        btnEditer.addActionListener(new ActionListener() {
+        btnEditerClient.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                Editer editer = new Editer();
+                editer.setVisible(true);
+                dispose();
             }
         });
         btnImporter.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                Importer importer = new Importer();
+                importer.setVisible(true);
+                dispose();
+            }
+        });
+        btnQuitter.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
             }
         });
     }

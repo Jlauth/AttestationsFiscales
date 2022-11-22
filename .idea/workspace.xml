@@ -4,24 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c984f67-1c83-4978-93ae-8e8e3527b938" name="Changes" comment="Mise à jour création jdbc sqlite.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArkadiaPC DB" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Creer.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Creer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Editer.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Editer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Importer.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Importer.java" afterDir="false" />
+    <list default="true" id="5c984f67-1c83-4978-93ae-8e8e3527b938" name="Changes" comment="DB configurée. Création de la vue.">
+      <change afterPath="$PROJECT_DIR$/src/controller/DocController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/media/logofinal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/media/signature.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AttestationsFiscales.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AttestationsFiscales.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controleur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Attestation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Attestation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Entreprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Entreprise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outils/connexion/Connexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outils/connexion/Connexion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Accueil.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Accueil.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Accueil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Accueil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Creer.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Creer.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Creer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Creer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Editer.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Editer.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Editer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Editer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Importer.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Importer.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Importer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,25 +51,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;365&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;419&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/env/Java/pluggins/sqlite-jdbc-3.39.4.0/sqlite-jdbc-3.39.4.0.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE": "left",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "244",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "right",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "346",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "C:/Program Files/env/Java/pluggins/log4j-core-2.19.0.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="template" />
       <recent name="outils.connexion" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -135,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668792587526</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="DB configurée. Création de la vue.">
+      <created>1669030184927</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669030184927</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,7 +163,8 @@
     <MESSAGE value="Commit initalisation." />
     <MESSAGE value="Création de la structure, classes et méthodes de model &amp; outils.connexion" />
     <MESSAGE value="Mise à jour création jdbc sqlite." />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour création jdbc sqlite." />
+    <MESSAGE value="DB configurée. Création de la vue." />
+    <option name="LAST_COMMIT_MESSAGE" value="DB configurée. Création de la vue." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
