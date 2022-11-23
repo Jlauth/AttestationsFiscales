@@ -4,22 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c984f67-1c83-4978-93ae-8e8e3527b938" name="Changes" comment="DB configurée. Création de la vue.">
-      <change afterPath="$PROJECT_DIR$/src/controller/DocController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/logofinal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/signature.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="5c984f67-1c83-4978-93ae-8e8e3527b938" name="Changes" comment="Travail sur la création du .docx">
+      <change afterPath="$PROJECT_DIR$/src/controler/AbstractControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Doc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AttestationsFiscales.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AttestationsFiscales.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Controleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controleur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Accueil.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Accueil.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controleur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DocController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Attestation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Entreprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Entreprise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outils/connexion/Connexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outils/connexion/Connexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Accueil.form" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Accueil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Accueil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Creer.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Creer.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Creer.form" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Creer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Creer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Editer.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Editer.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Editer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Editer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Importer.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Importer.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Importer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Editer.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Importer.form" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,13 +85,13 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Controleur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.Controleur" />
       <module name="AttestationsFiscales" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="controller.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
         <pattern>
@@ -102,8 +103,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="AttestationsFiscales" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Controleur" />
       </list>
     </recent_temporary>
@@ -145,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669030184927</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Travail sur la création du .docx">
+      <created>1669154022209</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669154022209</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +180,18 @@
     <MESSAGE value="Création de la structure, classes et méthodes de model &amp; outils.connexion" />
     <MESSAGE value="Mise à jour création jdbc sqlite." />
     <MESSAGE value="DB configurée. Création de la vue." />
-    <option name="LAST_COMMIT_MESSAGE" value="DB configurée. Création de la vue." />
+    <MESSAGE value="Travail sur la création du .docx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Travail sur la création du .docx" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

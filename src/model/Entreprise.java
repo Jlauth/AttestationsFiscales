@@ -1,29 +1,9 @@
 package model;
 
 public class Entreprise {
-    private int idEntreprise;
     private String nomEntreprise;
     private String adresseEntreprise;
     private int agrement;
-
-    /**
-     * Constructeur de la classe Entreprise
-     * @param idEntreprise      autoincrement
-     * @param nomEntreprise     nom
-     * @param adresseEntreprise adresse
-     * @param agrement          numéro d'agrément
-     */
-    public Entreprise(int idEntreprise, String nomEntreprise, String adresseEntreprise, int agrement) {
-        super();
-        this.idEntreprise = idEntreprise;
-        this.nomEntreprise = nomEntreprise;
-        this.adresseEntreprise = adresseEntreprise;
-        this.agrement = agrement;
-    }
-
-    public int getIdEntreprise() {
-        return idEntreprise;
-    }
 
     public String getNomEntreprise() {
         return nomEntreprise;

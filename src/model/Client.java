@@ -1,32 +1,16 @@
 package model;
 
 public class Client {
-    private int idClient;
+
     private String titre;
     private String nom;
     private String prenom;
     private String adresse;
+    private String dateEmission;
+    private String anneeFiscale;
+    private String montant;
 
-    /**
-     * Constructeur de la classe Client
-     * @param idClient  autoincrement
-     * @param titre     mademoiselle, madame, monsieur
-     * @param nom       client
-     * @param prenom    client
-     * @param adresse   client
-     */
-    public Client(int idClient, String titre, String nom, String prenom, String adresse) {
-        this.idClient = idClient;
-        this.titre = titre;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.adresse = adresse;
-    }
-
-    public int getIdClient() {
-        return idClient;
-    }
-
+    // getters
     public String getTitre() {
         return titre;
     }
@@ -42,11 +26,20 @@ public class Client {
     public String getAdresse() {
         return adresse;
     }
-
-
-    public void setIdClient(int idClient) {
-        this.idClient = idClient;
+    public String getDateEmission() {
+        return dateEmission;
     }
+
+    public String getAnneeFiscale() {
+        return anneeFiscale;
+    }
+
+    public String getMontant() {
+        return montant;
+    }
+
+
+    // setters
     public void setTitre(String titre) {
         this.titre = titre;
     }
@@ -63,7 +56,16 @@ public class Client {
         this.adresse = adresse;
     }
 
+    public void setDateEmission(String dateEmission) {
+        this.dateEmission = dateEmission;
+    }
 
+    public void setAnneeFiscale(String anneeFiscale) {
+        this.anneeFiscale = anneeFiscale;
+    }
 
+    public void setMontant(String montant) {
+        this.montant = montant;
+    }
 }
 
