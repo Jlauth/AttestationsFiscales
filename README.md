@@ -20,17 +20,17 @@ Nous prévoyons également de modifier l'application pour qu'elle puisse enregis
 
 ## Langages utilisés
 
-    Langage de développement : Java.
-    Langage base de données : SQL.
+Langage de développement : Java.
+Langage base de données : SQL.
 
 ## Technologies utilisées
 
-    IntelliJ IDEA : IDE pour le langage de programmation Java notamment.
-    SQLite JDBC : pilote JDBC open-source permettant de connecter une application Java à une base de données SQLite.
-    Swing : framework d’interface graphique pour Java.
-    PDFbox : bibliothèque Java OS permettant de manipuler des fichiers PDF.
-    JUnit : framework de test unitaire OS pour Java.
-    Git : système de contrôle de version.
-    GitHub : plateforme de partage de code source.
-    Win’Design : outil utilisé pour la modélisation des diagrammes UML et MCD.
+IntelliJ IDEA : IDE pour le langage de programmation Java notamment.
+SQLite JDBC : pilote JDBC open-source permettant de connecter une application Java à une base de données SQLite.
+Swing : framework d’interface graphique pour Java.
+PDFbox : bibliothèque Java OS permettant de manipuler des fichiers PDF.
+JUnit : framework de test unitaire OS pour Java.
+Git : système de contrôle de version.
+GitHub : plateforme de partage de code source.
+Win’Design : outil utilisé pour la modélisation des diagrammes UML et MCD.
 
